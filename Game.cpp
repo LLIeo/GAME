@@ -106,7 +106,7 @@ int main()
 			Interval = 2;
 			MinusToSleepTime = 5;
 			Mode = "Insane";
-			
+			goto ActualGame;
 			break;
 		}
 
