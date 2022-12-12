@@ -125,6 +125,7 @@ int main()
 		
 		}
 	ActualGame:
+		Points = 0;
 		while (bump == 0)
 		{
 
@@ -135,6 +136,9 @@ int main()
 			bump += Move(field, CounterToSpawn, Interval, p, Points, Min, Max);
 		}
 		cout << "\nThat was good!\nMode: " << Mode << ". Score : " << Points << ".\n "; cout << "Press any key to return to main menu!\n";
+		bump = 0;
+		ClearF(field, ZV ,ZV);
+		
 		_getch();
 		goto Menu;
 		}

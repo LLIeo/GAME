@@ -238,3 +238,13 @@ bool PrintMenu()
 
 	}
 }
+void ClearF(char** field, int h, int w)
+{
+	for (int i = 0; i < h; i++)
+	{
+		for (int k = 0; k < w; k++)
+		{
+			field[i][k] = ' ';
+		}
+	}
+}
